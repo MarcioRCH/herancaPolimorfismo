@@ -22,6 +22,8 @@ public class UsedProduct extends Product {
 	@Override
 	public String toString() {
 		return super.toString()
-			+ manufactureDate;
+			+ " (Used. Manufacture date: "
+			+ manufactureDate
+			+ ")";
 	}
 }
