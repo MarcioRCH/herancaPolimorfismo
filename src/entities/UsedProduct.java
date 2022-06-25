@@ -1,8 +1,11 @@
 package entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class UsedProduct extends Product {
+	
+	private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/YYYY");
 	
 	private Date manufactureDate;
 	
@@ -23,7 +26,7 @@ public class UsedProduct extends Product {
 	public String toString() {
 		return super.toString()
 			+ " (Used. Manufacture date: "
-			+ manufactureDate
+			+ sdf.format(manufactureDate)
 			+ ")";
 	}
 }
