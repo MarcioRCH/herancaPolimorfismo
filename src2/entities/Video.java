@@ -27,7 +27,8 @@ public class Video extends Lesson{
 	}
 	@Override
 	public Integer duration() {
-		return seconds += seconds;
+		int sum = 0;
+		return sum += seconds;
 	}
 
 }
